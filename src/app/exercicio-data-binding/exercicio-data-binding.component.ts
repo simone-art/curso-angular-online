@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExercicioDataBindingComponent implements OnInit {
 
+  imageURL = 'https://bloguinhodanana.files.wordpress.com/2011/01/filhotes-gato.jpg?w=584';
+
   constructor() { }
 
   ngOnInit(): void {
