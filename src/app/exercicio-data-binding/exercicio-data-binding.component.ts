@@ -16,4 +16,8 @@ export class ExercicioDataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clicou(){
+    console.log("Está funcionando!");
+  }
+
 }
