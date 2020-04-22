@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-exercicio-data-binding',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExercicioDataBindingComponent implements OnInit {
 
+  @Input() palavra: string;
+  
   imageURL = 'https://bloguinhodanana.files.wordpress.com/2011/01/filhotes-gato.jpg?w=584';
 
   constructor() { }
