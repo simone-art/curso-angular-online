@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ExercicioDataBindingComponent } from './exercicio-data-binding/exercicio-data-binding.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
+    ExercicioDataBindingComponent,
   ],
   imports: [
     BrowserModule
