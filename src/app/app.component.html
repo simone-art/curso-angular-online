@@ -3,7 +3,9 @@
 <app-home></app-home>
 <app-exercicio-contador
     [valor] = "10"
+    (valorMudou) ="onValorAtualizadoNoComputador($event)"
 ></app-exercicio-contador>
+
 <app-exercicio-data-binding 
 [palavra]="palavra"
 (clicado) ="eventoRecebido($event)"

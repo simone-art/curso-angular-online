@@ -16,4 +16,8 @@ export class AppComponent {
   eventoRecebido($event){
     console.log("App Component: EVENTO RECEBIDO", $event);
   }
+
+  onValorAtualizadoNoComputador($event){
+    console.log("onValorAtualizadoNoComputador", $event);
+  }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-exercicio-contador',
@@ -8,13 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ExercicioContadorComponent implements OnInit {
 
   @Input() valor = 0;
+  @Output() valorMudou = new EventEmitter();
 
   incrementar(){
     this.valor = this.valor + 1;
+    this.valorMudou.emit(this.valor);
   }
 
   decrementar(){
     this.valor = this.valor - 1;
+    this.valorMudou.emit(this.valor)
   }
 
 
