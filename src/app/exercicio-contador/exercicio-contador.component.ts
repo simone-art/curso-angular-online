@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-exercicio-contador',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExercicioContadorComponent implements OnInit {
 
-  valor = 0;
+  @Input() valor = 0;
 
   incrementar(){
     this.valor = this.valor + 1;

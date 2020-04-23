@@ -1,7 +1,9 @@
 <app-header></app-header>
 
 <app-home></app-home>
-<app-exercicio-contador></app-exercicio-contador>
+<app-exercicio-contador
+    [valor] = "10"
+></app-exercicio-contador>
 <app-exercicio-data-binding 
 [palavra]="palavra"
 (clicado) ="eventoRecebido($event)"
