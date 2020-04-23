@@ -9,6 +9,7 @@ export class ExercicioDataBindingComponent implements OnInit {
 
   @Input() palavra: string;
   
+  
   imageURL = 'https://bloguinhodanana.files.wordpress.com/2011/01/filhotes-gato.jpg?w=584';
 
   constructor() { }
@@ -16,8 +17,12 @@ export class ExercicioDataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  clicou(){
-    console.log("Está funcionando!");
+  clicou($event){
+    console.log("Está funcionando!", $event);
+  }
+
+  onClickBotaoEmissor($event){
+    console.log("Devo emitir informaçoes para o componente pai", $event);
   }
 
 }

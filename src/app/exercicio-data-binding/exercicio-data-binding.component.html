@@ -1,5 +1,5 @@
 <h1>Exemplos de Event Binding</h1>
-<button (click)="clicou()">Clique em mim</button>
+<button (click)="clicou($event)">Clique em mim</button>
 
 <hr>
 
@@ -8,4 +8,12 @@
 <p>exercicio-data-binding works!</p>
 <h2> Palavra: {{ palavra }} </h2>
 
+<h1>Exemplo de Event Binding Customizado</h1>
+
+<button (click)="onClickBotaoEmissor($event)">
+    emitir informação de clique
+</button>
+
+<hr>
 <img src = "{{ imageURL }}">
+
